@@ -5,7 +5,7 @@
 <meta name="author" content="">
 
 <title>V-Ticketing @yield('title')</title>
-<link rel="icon"  href="img/">
+<link rel="icon"  href="images/Chevron Down_48px.png">
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="icon" href=
