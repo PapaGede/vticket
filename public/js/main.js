@@ -6,13 +6,10 @@
              element.before(error);
         },
         rules: {
-            first_name : {
+            fname : {
                 required: true,
             },
-            last_name : {
-                required: true,
-            },
-            user_name : {
+            lname : {
                 required: true,
             },
              phone: {
