@@ -21,4 +21,9 @@ class PagesController extends Controller
     {
         return view('pages.services');
     }
+
+    public function getDetails()
+    {
+        return view('pages.details');
+    }
 }

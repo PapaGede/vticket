@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('services','PagesController@getService');
 Route::get('about','PagesController@getAbout');
+Route::get('details','PagesController@getDetails');
+Route::resource('customers','CustomerController');
 
 
 Route::get('/', function () {

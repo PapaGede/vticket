@@ -3,7 +3,7 @@
     var form = $("#signup-form");
     form.validate({
         errorPlacement: function errorPlacement(error, element) {
-             element.before(error); 
+             element.before(error);
         },
         rules: {
             first_name : {
@@ -15,6 +15,9 @@
             user_name : {
                 required: true,
             },
+             phone: {
+                required: true,
+            },
             password : {
                 required: true,
             },
@@ -22,6 +25,9 @@
                 required: true,
             },
             phone : {
+                required: true,
+            },
+            idselect : {
                 required: true,
             },
             address: {
@@ -90,7 +96,7 @@
         },
         onFinished: function (event, currentIndex)
         {
-            alert('Sumited');
+            document.getElementById("signup-form").submit();
         },
         // onInit : function (event, currentIndex) {
         //     event.append('demo');
@@ -110,22 +116,22 @@
         equalTo: ""
     });
 
-    $('#gender').parent().append('<ul class="list-item" id="newgender" name="gender"></ul>');
-    $('#gender option').each(function(){
-        $('#newgender').append('<li value="' + $(this).val() + '">'+$(this).text()+'</li>');
+    $('#idselect').parent().append('<ul class="list-item" id="newidselect" name="idselect"></ul>');
+    $('#idselect option').each(function(){
+        $('#newidselect').append('<li value="' + $(this).val() + '">'+$(this).text()+'</li>');
     });
-    $('#gender').remove();
-    $('#newgender').attr('id', 'gender');
-    $('#gender li').first().addClass('init');
-    $("#gender").on("click", ".init", function() {
-        $(this).closest("#gender").children('li:not(.init)').toggle();
+    $('#idselect').remove();
+    $('#newidselect').attr('id', 'idselect');
+    $('#idselect li').first().addClass('init');
+    $("#idselect").on("click", ".init", function() {
+        $(this).closest("#idselect").children('li:not(.init)').toggle();
     });
-    
-    var allOptions = $("#gender").children('li:not(.init)');
-    $("#gender").on("click", "li:not(.init)", function() {
+
+    var allOptions = $("#idselect").children('li:not(.init)');
+    $("#idselect").on("click", "li:not(.init)", function() {
         allOptions.removeClass('selected');
         $(this).addClass('selected');
-        $("#gender").children('.init').html($(this).html());
+        $("#idselect").children('.init').html($(this).html());
         allOptions.toggle();
     });
 
@@ -139,7 +145,7 @@
     $("#country").on("click", ".init", function() {
         $(this).closest("#country").children('li:not(.init)').toggle();
     });
-    
+
     var CountryOptions = $("#country").children('li:not(.init)');
     $("#country").on("click", "li:not(.init)", function() {
         CountryOptions.removeClass('selected');
@@ -158,7 +164,7 @@
     $("#payment_type").on("click", ".init", function() {
         $(this).closest("#payment_type").children('li:not(.init)').toggle();
     });
-    
+
     var PaymentsOptions = $("#payment_type").children('li:not(.init)');
     $("#payment_type").on("click", "li:not(.init)", function() {
         PaymentsOptions.removeClass('selected');
@@ -188,5 +194,5 @@
         minimumAge: 0,
         maximumAge: 120
     });
-        
+
 })(jQuery);

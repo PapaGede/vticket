@@ -19,7 +19,8 @@
 
                 <div class="container">
                     <h2>SIGN UP OFFICE EMPLYEE ACCOUNT</h2>
-                    <form method="POST" id="signup-form" class="signup-form">
+                    <form method="POST" action="{{route('customers.store')}}" id="signup-form" class="signup-form">
+                        <input name="_token" type="hidden" value="{{csrf_token()}}"/>
                             <h3>
                                 <span class="icon"><i class="ti-user"></i></span>
                                 <span class="title_text">Personal</span>
@@ -30,49 +31,41 @@
                                     <span class="step-number">Step 1 / 4</span>
                                 </legend>
                                 <div class="form-group">
-                                    <label for="first_name" class="form-label required">First name</label>
-                                    <input type="text" name="first_name" id="first_name" />
+                                    <label for="fname" class="form-label required">First name</label>
+                                    <input type="text" name="fname" id="first_name" />
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="last_name" class="form-label required">Last name</label>
-                                    <input type="text" name="last_name" id="last_name" />
+                                    <label for="lname" class="form-label required">Last name</label>
+                                    <input type="text" name="lname" id="last_name" />
                                 </div>
 
-                                <div class="form-row">
-                                    <div class="form-date">
-                                        <label for="birth_date" class="form-label">Date of birth</label>
-                                        <div class="form-date-group">
-                                            <div class="form-date-item">
-                                                <select id="birth_date" name="birth_date"></select>
-                                                <span class="select-icon"><i class="ti-angle-down"></i></span>
-                                            </div>
-                                            <div class="form-date-item">
-                                                <select id="birth_month" name="birth_month"></select>
-                                                <span class="select-icon"><i class="ti-angle-down"></i></span>
-                                            </div>
-                                            <div class="form-date-item">
-                                                <select id="birth_year" name="birth_year"></select>
-                                                <span class="select-icon"><i class="ti-angle-down"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-select">
-                                        <label for="gender" class="form-label">Gender</label>
-                                        <div class="select-list">
-                                            <select name="gender" id="gender">
-                                                <option value="">Male</option>
-                                                <option value="Male">Male</option>
-                                                <option value="Female">Female</option>
-                                            </select>
-                                        </div>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label required">Email</label>
+                                    <input type="text" name="email" id="email" />
                                 </div>
+
+
 
                                 <div class="form-group">
                                     <label for="password" class="form-label required">Password</label>
                                     <input type="password" name="password" id="password" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone" class="form-label required">Phone Number</label>
+                                    <input type="number" name="phone" id="phone" />
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label for="id_type" class="form-label required">Please enter your ID number</label>
+                                    <input type="text" name="id_type" id="verify" pattern="[a-zA-Z0-9\s]+" />
+                                </div>
+
+                                <div class="form-group">
+                                        <label for="id_number" class="form-label required">Please enter your ID number</label>
+                                        <input type="text" name="id_number" id="verify" pattern="[a-zA-Z0-9\s]+" />
                                 </div>
                             </fieldset>
 
