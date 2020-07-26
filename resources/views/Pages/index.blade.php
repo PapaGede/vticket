@@ -1,4 +1,4 @@
-@extends('main')
+@extends('layouts.main')
 @section('content')
 
 <body>
@@ -37,7 +37,7 @@
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
                         <h2 class="section-heading">The Best Buses:<br>Special Thanks</h2>
-                        <p class="lead">A special thanks to <a target="_blank" href="https://www.setra.de/en/home.html/">Setra</a> for providing us with good,fast and safety buses. Visit their website to check out their latest cars and buses.</p>
+                        <p class="lead">A special thanks to Setra</a> for providing us with good,fast and safety buses. Visit their website to check out their latest cars and buses.</p>
                     </div>
                     <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                         <img class="img-responsive" src="images/Mercedes-Benz_Bus_Motion_526871_1920x1080.jpg" alt="">

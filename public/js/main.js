@@ -6,27 +6,8 @@
              element.before(error);
         },
         rules: {
-            fname : {
-                required: true,
-            },
-            lname : {
-                required: true,
-            },
-             phone: {
-                required: true,
-            },
-            password : {
-                required: true,
-            },
-            email : {
-                required: true,
-            },
-            phone : {
-                required: true,
-            },
-            idselect : {
-                required: true,
-            },
+
+
             address: {
                 required: true,
             },
@@ -182,9 +163,9 @@
     });
 
     $.dobPicker({
-        daySelector: '#expiry_date',
-        monthSelector: '#expiry_month',
-        yearSelector: '#expiry_year',
+        daySelector: '#date',
+        monthSelector: '#month',
+        yearSelector: '#year',
         dayDefault: 'Day',
         monthDefault: 'Month',
         yearDefault: 'Year',

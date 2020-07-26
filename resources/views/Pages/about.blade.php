@@ -1,8 +1,8 @@
+@extends('layouts.main')
 @section('title','| About')
-@extends('layouts.welcome')
 @section('content')
 
-</style>
+
 <br/>
 <br/>
 <div id="layoutSidenav_content">
@@ -17,13 +17,13 @@
 
     <div class="container">
         <h3 style="font-family:sans-serif">History:</h3>
-        <p class="lead text-muted" style="font-size: 16px; line-height:25px;font-family:'Times New Roman', Times, serif">The roots and origin of intercity STC (ISTC) began in 1909 as a Government Transport Department to cater for the needs of the central Government. In 1965, it was made a body corporate by Legislative Instrument (L.I) number 414 of 9th March 1965 to run commercial passenger services and was then called the State Transport Corporation (STC).</p>
-        <p class="lead text-muted" style="font-size: 16px; line-height:25px;font-family:'Times New Roman', Times, serif">In January 1968, the Government also created a haulage division to cater for the haulage of both dry and wet cargo. This was also handed over to STC to manage as a bulk haulage division, to function alongside the passenger division. STC was later incorporated in June 1995 as a Limited Liability Company under STC’s Companies Act, 1962, (Act 179) in the name, State Transport Company Limited. Over the years, the company has gone through changes and is now known as the Intercity STC Coaches Limited since 2003 October</p>
+        <p class="lead text-muted" style="font-size: 16px; line-height:25px;font-family:'Times New Roman', Times, serif">The roots and origin of intercity Vticket began in 1909 as a Government Transport Department to cater for the needs of the central Government. In 1965, it was made a body corporate by Legislative Instrument (L.I) number 414 of 9th March 1965 to run commercial passenger services.</p>
+        <p class="lead text-muted" style="font-size: 16px; line-height:25px;font-family:'Times New Roman', Times, serif">In January 1968, the Government also created a haulage division to cater for the haulage of both dry and wet cargo. This was also handed over to Vticket to manage as a bulk haulage division, to function alongside the passenger division. Vticket was later incorporated in June 1995 as a Limited Liability Company under Vticket’s Companies Act, 1962, (Act 179) in the name, State Transport Company Limited. Over the years, the company has gone through changes and is now known as the Intercity Vticket Coaches Limited since 2003 October</p>
     </div>
 
     <div class="container">
         <h3>Vision</h3>
-        <p class="lead text-muted" style="font-size: 16px; line-height:25px;font-family:'Times New Roman', Times, serif">To be the leader in the road passenger transport industry in STC and the ECOWAS sub-region</p>
+        <p class="lead text-muted" style="font-size: 16px; line-height:25px;font-family:'Times New Roman', Times, serif">To be the leader in the road passenger transport industry in Vticket and the ECOWAS sub-region</p>
     </div>
 
     <div class="container">

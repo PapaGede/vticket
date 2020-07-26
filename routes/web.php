@@ -12,13 +12,31 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('services','PagesController@getService');
+Route::get('/','PagesController@index')->name('pages.index');
 Route::get('about','PagesController@getAbout');
 Route::get('details','PagesController@getDetails');
 Route::resource('customers','CustomerController');
+Route::post('customers-authenticate','CustomerController@authenticate')->name('customers-authenticate');
+Route::get('getTrips', 'AjaxController@getTrips')->name('getTrips');
 
+Route::get('services','PagesController@getService')->middleware('auth');
+//admin routes
 
-Route::get('/', function () {
-    return view('layouts.welcome');
+Route::prefix('dashboard')->group(function(){
+
+        Route::middleware(['web','admin'])->group(function(){
+            Route::get('/','DashboardController@index')->name('dashboard.index');
+            Route::resource('region','RegionController');
+            Route::resource('trips','TripController');
+            Route::resource('buses','BusController');
+            Route::resource('orders','OrderController');
+            Route::resource('passengers','PassengerController');
+
+        });
+
 });
 
+
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');

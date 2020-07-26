@@ -1,27 +1,27 @@
 
 <footer py-4 bg-light mt-auto>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
                 <ul class="list-inline">
                     <li>
-                        <a href="index.html"target="content">Home</a>
+                        <a href="/"target="content">Home</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="about">About</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a href="#services">Services</a>
+                        <a href="services">Services</a>
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
-                <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+                <p class="copyright text-muted small">Copyright &copy; Vticket 2020. All Rights Reserved</p>
             </div>
         </div>
     </div>
